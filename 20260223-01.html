@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS複習2</title>
+    <link rel="stylesheet" href="css/20260223.css">
+    <style>
+        .box01 {
+            width: 400px;
+            height: 400px;
+            /* background-color: #e77070; */
+            background: linear-gradient(-30deg, var(--color-teal-300), var(--color-green-300));
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px 2px var(--color-forest-700);
+            color: var(--color-green-600);
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 2;
+            letter-spacing: 1px;
+            transition:
+                transform 1s,
+                box-shadow 1s,
+                color 1.5s,
+                line-height 2s,
+                letter-spacing 2s;
+        }
+
+        .box01:hover {
+            background: linear-gradient(-15deg, var(--color-green-300), var(--color-teal-300));
+            transform: translateX(10px) scale(1.02) rotate(1deg);
+            box-shadow: 5px 5px 10px 5px var(--color-forest-700);
+            color: var(--color-neutral-50);
+            line-height: 3.5;
+            letter-spacing: 18px;
+        }
+
+        .box02 {
+            width: 400px;
+            height: 400px;
+            /* background-color: #e77070; */
+            background-color: #912f2f;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px 2px #532424;
+            color: rgb(139, 146, 72);
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 2;
+            letter-spacing: 1px;
+            transition:
+                transform 1.5s,
+                box-shadow 1s,
+                color 2s,
+                line-height 2s,
+                letter-spacing 2s,
+                background-color 1s,
+                font-size 2s;
+        }
+
+        .box02:hover {
+            background-color: #a52424;
+            transform: scale(1.02) rotate(360deg);
+            box-shadow: 5px 5px 10px 5px #9e090955;
+            color: #f5e021;
+            line-height: 2;
+            letter-spacing: 12px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box01">
+        <p>最好的要有我說外資勝利否則委員會認定思路尋求，騎士思維機械保留實行的話面積本科於是，無限掌握未知你。</p>
+    </div>
+    <div class="box02">
+        <p>第一個春節好評數學作為身體傳播福州心理投資收到房間彷彿，理想塑膠欄目因素，課堂成就考試，打了翻譯留。</p>
+    </div>
+</body>
+
+</html>

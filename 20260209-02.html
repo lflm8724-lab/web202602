@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 和 CSS練習</title>
+    <style>
+        .box01 {
+            /* 寬 */
+            width: 200px;
+            /* 高 */
+            height: 200px;
+            /* 背景色 */
+            /* background-color: #B7E4C7; */
+            /* 漸層色 */
+            background: linear-gradient(90deg,
+                    rgb(204, 117, 117),
+                    rgb(219, 202, 102));
+            /* box間距 margin */
+            margin-top: 50px;
+            margin-left: 50px;
+            /* 文字與box間距 padding */
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            /* 鎖住原大小 */
+            box-sizing: border-box;
+            /* 影子(水平參數 垂直參數 模糊 厚度 顏色) */
+            box-shadow: 2px 2px 10px 2px #b6adad;
+            /* 圓角 */
+            border-radius: 15px;
+            /* 文字格式 */
+            color: rgb(65, 65, 116);
+            font-size: 17px;
+            font-weight: bolder;
+            /* 行距 字距 */
+            line-height: 1.5;
+            letter-spacing: 1.5px;
+        }
+
+        .box02 {
+            width: 200px;
+            height: 200px;
+            background-color: #80B918;
+            margin-top: 50px;
+            margin-left: 100px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 10px 2px #b6adad;
+            border-radius: 20px;
+            color: rgb(47, 101, 126);
+            font-size: 17px;
+            font-weight: bolder;
+        }
+
+        .box03 {
+            width: 200px;
+            height: 200px;
+            background-color: #2B9348;
+            margin-top: 50px;
+            margin-left: 150px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 10px 2px #b6adad;
+            border-radius: 25px;
+            color: rgb(167, 199, 92);
+            font-size: 17px;
+            font-weight: bolder;
+        }
+
+        .box04 {
+            width: 200px;
+            height: 200px;
+            background-color: #588157;
+            margin-top: 50px;
+            margin-left: 200px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 10px 2px #b6adad;
+            border-radius: 30px;
+            color: rgb(45, 89, 148);
+            font-size: 17px;
+            font-weight: bolder;
+        }
+
+        .box05 {
+            width: 200px;
+            height: 200px;
+            background-color: #A3B18A;
+            margin-top: 50px;
+            margin-left: 250px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 10px 2px #b6adad;
+            border-radius: 35px;
+            color: rgb(76, 45, 94);
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        /* 鼠標移上去 */
+        .box01:hover{
+            background: linear-gradient(-90deg,
+                    rgb(204, 117, 117),
+                    rgb(219, 202, 102));
+            /* 動畫 */
+            transform: scale(1.03) rotate(1deg) translateX(30px);
+            transition: transform 1s ;
+        }
+        .box02:hover{
+            background-color: #75da5b;
+            transform: scale(1.3) rotate(1deg) translateX(30px);
+            transition: transform 1s ;
+        }
+        .box03:hover{
+            transform: scale(1.03) rotate(360deg);
+            transition: transform 0.5s ;
+        }
+        .box04:hover{
+            transform: scale(0.1) rotate(360deg);
+            transition: transform 0.5s ;
+        }
+        .box05:hover{
+            background: linear-gradient(-90deg,
+                    #A3B18A,
+                    rgb(131, 184, 165));
+            transform: translateX(50px);
+            transition: transform 1s ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box01">
+        <p>徹底責任編輯專家，害怕幫助原理為你則是拍攝一塊屏東集體，上班將軍不見舉辦網路願意藥品中文避免語文聯。</p>
+    </div>
+    <div class="box02">
+        <p>轉讓運動威望協會身影如果您校園保證裝飾手段收費網域名稱，考生抓住吃螺絲你能分鐘，是這樣，模擬專欄親。</p>
+    </div>
+    <div class="box03">
+        <p>臺灣民眾吸收更新時間中有不見您現在，民主大全天堂一批不詳商業最為，發現頭銜看過笑容，精品線上魅力之。</p>
+    </div>
+    <div class="box04">
+        <p>批評組織零售建材藝術，警察你自己主持，而言學院都市成人存款，聽到植物思想閲讀，不詳西部成本二級，起。</p>
+    </div>
+    <div class="box05">
+        <p>你知道簡體網遊專區容量事故受傷瘋狂他對房價，還不圖書報名常見推廣夫人所說爭取登錄諾基亞，上述收費然。</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body {
+    font-family: "DotGothic16", sans-serif;
+}
+
+/* 變數 */
+:root {
+    /* --- 1. 淺色背景/介面系 (Neutral & Surface) --- */
+    --color-neutral-50: #F1F8F5;
+    --color-neutral-100: #E2EDE9;
+    --color-neutral-200: #D4E5DE;
+    --color-neutral-300: #9BCFB8;
+    /* 原始色 1 */
+    --color-neutral-400: #B8DACD;
+    --color-neutral-500: #CCE4D9;
+
+    /* --- 2. 自然綠動系 (The Greens / Sage) --- */
+    --color-green-100: #E8F0E5;
+    --color-green-200: #C1D9BC;
+    --color-green-300: #A2C49A;
+    --color-green-400: #7FB174;
+    /* 原始色 2 */
+    --color-green-500: #65905C;
+    --color-green-600: #3A5534;
+
+    /* --- 3. 靜謐藍綠系 (Muted Teals / Primary) --- */
+    --color-teal-100: #A8C5C2;
+    --color-teal-200: #88AFAB;
+    --color-teal-300: #689C97;
+    /* 原始色 3 */
+    --color-teal-400: #4B7A75;
+    --color-teal-500: #335C58;
+    --color-teal-600: #1F403D;
+
+    /* --- 4. 深邃墨色系 (Deep Forest / Text) --- */
+    --color-forest-500: #22897A;
+    --color-forest-600: #1B7568;
+    --color-forest-700: #156256;
+    --color-forest-800: #104F45;
+    --color-forest-900: #0A3D34;
+    --color-forest-950: #072A24;
+    /* 原始色 4 */
+
+    /* --- 5. 互補大地系 (Earth & Warmth / Accents) --- */
+    --color-earth-100: #D9D08C;
+    /* 淡金 */
+    --color-earth-200: #B3AC6D;
+    /* 橄欖 */
+    --color-earth-300: #D9B38C;
+    /* 溫暖木質 */
+    --color-earth-400: #B38B6D;
+    /* 陶土 */
+    --color-earth-500: #8C6D51;
+    /* 深胡桃 */
+    --color-earth-600: #6B5139;
+    /* 焦糖深 */
+}
