@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch6. Bootstrap的欄與列練習</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/20260223.css">
+    <style>
+        .box01 {
+            height: 220px;
+            background-image: url(images/wolf2.avif);
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .box02 {
+            height: 140px;
+            line-height: 140px;
+            margin-top: 15px;
+            background-color: var(--color-green-300);
+        }
+
+        .box03 {
+            box-shadow: 2px 2px 5px 2px #a1a1a1;
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .box03:hover {
+            border: 3px solid;
+            border-color: rgb(12, 148, 167);
+            box-shadow: 2px 2px 5px 2px #c2c2c2;
+        }
+
+        @media screen and (min-width:992px) {
+            .box02 {
+                width: 220px;
+                height: 220px;
+                border-radius: 50%;
+                line-height: 220px;
+                margin-top: 15px;
+                background-color: var(--color-teal-200);
+            }
+
+            .box02:hover {
+                background-color: var(--color-teal-100);
+                color: var(--color-forest-500);
+            }
+        }
+
+        @media screen and (min-width:1200px) {
+            .box02 {
+                width: 280px;
+                height: 280px;
+                border-radius: 50%;
+                line-height: 280px;
+                margin-top: 15px;
+                background-color: var(--color-earth-200);
+            }
+
+            .box02:hover {
+                background-color: var(--color-earth-100);
+                color: var(--color-earth-400);
+            }
+
+            .box03:hover {
+                border: 3px solid;
+                border-color: rgb(223, 151, 56);
+                box-shadow: 2px 2px 5px 2px #c2c2c2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-none d-sm-block">
+                <div class="box01 bg-cover"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="box02 text-center h1">選單01</div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="box02 text-center h1">選單02</div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="box02 text-center h1">選單03</div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="box02 text-center h1">選單04</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div
+                        style="background-image: url(images/Forestbathing.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;">
+                    </div>
+                    <div class="h4 text-center">旅遊景點001</div>
+                    <p>無聊教授效果共有練習學生但他微微陷入稱為本人哪些，電子郵件家庭需求論文大量，隨便明年一顆，是這樣語。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div
+                        style="background-image: url(images/lake.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;">
+                    </div>
+                    <div class="h4 text-center">旅遊景點002</div>
+                    <p>無聊教授效果共有練習學生但他微微陷入稱為本人哪些，電子郵件家庭需求論文大量，隨便明年一顆，是這樣語。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div
+                        style="background-image: url(images/Macronature.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;">
+                    </div>
+                    <div class="h4 text-center">旅遊景點003</div>
+                    <p>無聊教授效果共有練習學生但他微微陷入稱為本人哪些，電子郵件家庭需求論文大量，隨便明年一顆，是這樣語。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div
+                        style="background-image: url(images/Peacock.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;">
+                    </div>
+                    <div class="h4 text-center">旅遊景點004</div>
+                    <p>無聊教授效果共有練習學生但他微微陷入稱為本人哪些，電子郵件家庭需求論文大量，隨便明年一顆，是這樣語。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div
+                        style="background-image: url(images/Seaturtle.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;">
+                    </div>
+                    <div class="h4 text-center">旅遊景點005</div>
+                    <p>無聊教授效果共有練習學生但他微微陷入稱為本人哪些，電子郵件家庭需求論文大量，隨便明年一顆，是這樣語。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="box03">
+                    <div
+                        style="background-image: url(images/Wilderness.avif); height: 220px; background-position: center center; background-size: cover; margin-bottom: 10px;">
+                    </div>
+                    <div class="h4 text-center">旅遊景點006</div>
+                    <p>無聊教授效果共有練習學生但他微微陷入稱為本人哪些，電子郵件家庭需求論文大量，隨便明年一顆，是這樣語。</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery-4.0.0.js"></script>
+</body>
+
+</html>

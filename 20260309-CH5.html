@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch5.表格(table)</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/20260223.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display-1 text-center">Ch5.表格(table)</div>
+        <h1>一般table:</h1>
+        <p>table:表格</p>
+        <p>tread:標頭</p>
+        <p>tbody:內容</p>
+        <p>tr:整列</p>
+        <p>th:單格</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>編號</th>
+                    <th>品項</th>
+                    <th>價格</th>
+                    <th>數量</th>
+                    <th>備註</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>001</th>
+                    <th>紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+                <tr>
+                    <th>002</th>
+                    <th>紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+                <tr>
+                    <th>003</th>
+                    <th>紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Bootstrap內建語法:</h1>
+        <p>table:表格</p>
+        <p>table-dark:黑底白字</p>
+        <p>table-striped:奇數偶數列顏色相間</p>
+        <p>table-bordered:表格框線</p>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>編號</th>
+                    <th>品項</th>
+                    <th>價格</th>
+                    <th>數量</th>
+                    <th>備註</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>001</th>
+                    <th>紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+                <tr>
+                    <th>002</th>
+                    <th>紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+                <tr>
+                    <th>003</th>
+                    <th>紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+            </tbody>
+        </table>
+        <p>table-hover:鼠標移上去會有反應</p>
+        <p>table-sm:縮表格跟字的內距</p>
+        <table class="table table-bordered table-hover table-sm">
+            <thead>
+                <tr>
+                    <th>編號</th>
+                    <th>品項</th>
+                    <th>價格</th>
+                    <th>數量</th>
+                    <th>備註</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>001</th>
+                    <th>紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+                <tr>
+                    <th>002</th>
+                    <th>紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+                <tr>
+                    <th>003</th>
+                    <th>紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+            </tbody>
+        </table>
+        <p>table-XXX:比較舒適
+        <ul>
+            <li>active:灰</li>
+            <li>primary:藍</li>
+            <li>secondary:深灰</li>
+            <li>success:綠</li>
+            <li>danger:紅</li>
+            <li>warning:黃</li>
+            <li>info:淺藍</li>
+            <li>light:白</li>
+            <li>dark:黑</li>
+        </ul>
+        </p>
+        <p>bg-XXX:比較強烈
+        <ul>
+            <li>primary:藍</li>
+            <li>success:綠</li>
+            <li>danger:紅</li>
+            <li>warning:黃</li>
+            <li>info:青綠</li>
+        </ul>
+        </p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>編號</th>
+                    <th>品項</th>
+                    <th>價格</th>
+                    <th>數量</th>
+                    <th>備註</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-success">
+                    <th>001</th>
+                    <th class="bg-danger">紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+                <tr class="table-primary">
+                    <th>002</th>
+                    <th>紅茶拿鐵</th>
+                    <th>65</th>
+                    <th>1</th>
+                    <th class="bg-warning">微糖去冰</th>
+                </tr>
+                <tr>
+                    <th>003</th>
+                    <th>紅茶拿鐵</th>
+                    <th class="bg-info">65</th>
+                    <th>1</th>
+                    <th>微糖去冰</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷首頁</title>
+    <link rel="stylesheet" href="CSS/20260302.css">
+    <style>
+        .section01 {
+            background-color: var(--color-green-200);
+            height: 80vh;
+            position: relative;
+        }
+
+        .box01 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: var(--color-green-400);
+            top: 0;
+            left: 0;
+        }
+
+        .box02 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: var(--color-green-400);
+            top: 0;
+            right: 0;
+        }
+
+        .box03 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: var(--color-green-400);
+            bottom: 0;
+            left: 0;
+        }
+
+        .box04 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: var(--color-green-400);
+            bottom: 0;
+            right: 0;
+        }
+
+        .box01,
+        .box02,
+        .box03,
+        .box04 {
+            border-radius: 50%;
+            /* 改成圓形或橢圓，像石頭或葉片 */
+            filter: blur(40px);
+            /* 模糊化，做出光暈感 */
+            opacity: 0.5;
+        }
+
+        .userimage {
+            position: absolute;
+            top: 50px;
+            bottom: 50px;
+            left: 50px;
+            right: 50px;
+            background-color: var(--color-teal-100);
+            /* 背景圖相關 */
+            background-image: url(images/lake.avif);
+            background-position: center center;
+            background-size: cover;
+            border-radius: 15px;
+            box-shadow: 2px 2px 4px 2px var(--color-forest-700);
+            transition: 1s;
+        }
+
+        .usertext {
+            backdrop-filter: blur(8px);
+            /* 關鍵：毛玻璃效果 */
+            background-color: var(--text-bg01);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            color: #283618;
+            /* 深苔蘚綠文字 */
+            /* 原有的定位保持不動 */
+            position: absolute;
+            padding: 30px;
+            border-radius: 20px;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 60%;
+            /* 給它一點寬度更有呼吸感 */
+        }
+
+        .usertext h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .usertext h2 {
+            text-align: center;
+            margin: 0;
+            color: var(--color-earth-100);
+        }
+
+        .userimage:hover {
+            transform: scale(1.02);
+        }
+
+        .usertext:hover {
+            background-color: var(--text-bg02);
+        }
+
+        .section02 {
+            position: relative;
+        }
+
+        .s02_box01 {
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            background-color: var(--color-neutral-300);
+            border-radius: 25px;
+            text-align: center;
+            line-height: 100px;
+            left: 5%;
+            margin-top: 25px;
+        }
+
+        .s02_box01 a {
+            background-color: var(--color-neutral-300);
+            box-shadow: 0 4px 15px var(--color-forest-700);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .s02_box02 {
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            background: linear-gradient(45deg, #2d6a4f 0%, #95d5b2 50%, #2d6a4f 100%);
+            background-size: 200% auto;
+            transition: background-position 0.5s ease;
+            background-position: left center;
+            border-radius: 25px;
+            text-align: center;
+            line-height: 100px;
+            left: 25%;
+            margin-top: 25px;
+        }
+
+        .s02_box02 a {
+            text-decoration: none;
+            color: var(--color-neutral-50);
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .s02_box03 {
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            background-image: url(images/wolf2.avif);
+            background-position: center center;
+            background-size: cover;
+            filter: grayscale(100);
+            border-radius: 25px;
+            text-align: center;
+            line-height: 100px;
+            left: 45%;
+            margin-top: 25px;
+        }
+
+        .s02_box03 a {
+            text-decoration: none;
+            color: var(--color-neutral-50);
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .s02_box01:hover {
+            background-color: var(--color-teal-300);
+        }
+
+        .s02_box02:hover {
+            /* background-color: var(--color-teal-300); */
+            background-position: right center;
+        }
+
+        .s02_box03:hover {
+            /* background-color: var(--color-teal-300); */
+            filter: grayscale(0);
+            transition: 1s;
+        }
+
+        .section01::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            /* 非常淡 */
+            pointer-events: none;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            /* 紙張紋理 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="section01">
+        <div class="box01"></div>
+        <div class="box02"></div>
+        <div class="box03"></div>
+        <div class="box04"></div>
+        <div class="userimage">
+            <div class="usertext">
+                <h1>XXX</h1>
+                <hr>
+                <h2>Front-End Developer</h2>
+                <p>投入報告本論壇性能尊重，轎車人氣增長登陸，等待評論，投資者。</p>
+                <p>對付引擎看出球員眼光禁止任何研究放棄做好明星，收。</p>
+                <p>我也湖口一生推薦想像再說鈴聲紀念只不過，套件轉變證件較高支持，戰爭大。</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="section02">
+        <div class="s02_box01">
+            <a href="index.html">0209-HTML和CSS練習</a>
+        </div>
+        <div class="s02_box02">
+            <a href="20260209-02.html">0209-HTML和CSS練習02</a>
+        </div>
+        <div class="s02_box03">
+            <a href="20260223-01.html">0223-HTML和CSS配色練習</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch3.Bootstrap文字相關 Ch4.圖片相關</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/20260223.css">
+    <style>
+        .h1 {
+            margin-top: 10px;
+        }
+
+        .box01 {
+            border: 2px solid var(--color-green-400);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px 2px var(--color-neutral-300);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ch3.Bootstrap文字相關</h1>
+
+        <h1>1.h1 ~ h5</h1>
+        <div class="box01">
+            <h1>深入還有眼中沒人今天避免負責。</h1>
+            <h2>深入還有眼中沒人今天避免負責。</h2>
+            <h3>深入還有眼中沒人今天避免負責。</h3>
+            <h4>深入還有眼中沒人今天避免負責。</h4>
+            <h5>深入還有眼中沒人今天避免負責。</h5>
+        </div>
+
+        <h1>class="h1" ~ class="h5"</h1>
+        <div class="box01">
+            <div class="h1">深入還有眼中沒人今天避免負責。</div>
+            <div class="h2">深入還有眼中沒人今天避免負責。</div>
+            <div class="h3">深入還有眼中沒人今天避免負責。</div>
+            <div class="h4">深入還有眼中沒人今天避免負責。</div>
+            <div class="h5">深入還有眼中沒人今天避免負責。</div>
+        </div>
+
+        <h1>2.display-1 ~ display-6</h1>
+        <div class="box01">
+            <p>內建標題大小:</p>
+            <div class="display-1">這是一個大標題</div>
+            <div class="display-2">這是一個大標題</div>
+            <div class="display-3">這是一個大標題</div>
+            <div class="display-4">這是一個大標題</div>
+            <div class="display-5">這是一個大標題</div>
+            <div class="display-6">這是一個大標題</div>
+        </div>
+
+        <h1>3.文本元素</h1>
+        <div class="box01">
+            <p>mark:</p>
+            <p>Lorem ipsum dolor sit amet consectetur <mark>adipisicing</mark> elit. Incidunt, sed?</p>
+            <p>del:</p>
+            <p><del>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sed?</del></p>
+            <p>s:</p>
+            <p><s>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sed?</s></p>
+            <p>ins:</p>
+            <p><ins>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sed?</ins></p>
+            <p>u:</p>
+            <p><u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sed?</u></p>
+            <p>small:</p>
+            <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sed?</small></p>
+            <p>strong:</p>
+            <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sed?</strong></p>
+            <p>em:</p>
+            <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sed?</em></p>
+        </div>
+
+        <h1>4.text-start,text-center,text-end</h1>
+        <div class="box01">
+            <p>文字的左中右:</p>
+            <p class="text-start">國語情形醫生詳細身影這一點聲。</p>
+            <p class="text-center">國語情形醫生詳細身影這一點聲。</p>
+            <p class="text-end">國語情形醫生詳細身影這一點聲。</p>
+        </div>
+
+        <h1>5.list-unstyled</h1>
+        <div class="box01">
+            <p>去除列表的黑點 但更內一層的不影響:</p>
+            <ul class="list-unstyled">
+                <li>選單項目01</li>
+                <li>選單項目02</li>
+                <ul>
+                    <li>選單項目002-1</li>
+                    <li>選單項目002-2</li>
+                    <li>選單項目002-3</li>
+                </ul>
+                <li>選單項目03</li>
+                <li>選單項目04</li>
+                <li>選單項目05</li>
+            </ul>
+        </div>
+
+        <h1>6.list-inline</h1>
+        <div class="box01">
+            <p>列表改為橫向:</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">橫向選單01</li>
+                <li class="list-inline-item">橫向選單02</li>
+                <li class="list-inline-item">橫向選單03</li>
+                <li class="list-inline-item">橫向選單04</li>
+            </ul>
+        </div>
+
+        <h1>7.text-truncate</h1>
+        <div class="box01">
+            <p>文字隨框框變動且只顯示一行:</p>
+            <p class="text-truncate">
+                直播主情感最新上午你的代理收集要求努力之類研發聯想，篇文章民眾身影本文我這你怎不來看了長度接受，不想成本小時見到，一旦還要不起成為表面舉行推進他不雙方情形，證書休閒美國宜蘭成功，最後動漫來說，最大您。</p>
+        </div>
+
+        <h1>Ch4.Bootstrap圖片相關</h1>
+
+        <h1>8.float-start,float-end</h1>
+        <div class="box01">
+            <p>文繞圖:</p>
+            <img src="images/wolf2.avif" width="200px" alt="" class="float-start">
+            <p>臺灣才能問題來到司機天氣，世界盃導演照顧類別事故是我房子，市場價技巧機構會計重要線上委員會負責人，真實性不明白精靈氣息類型北方，喜愛隨後臨床樓上窗口手冊更為因為予以有人，嚴重負責先後安排有什麼諾基亞漢化微軟時期願意加盟對外一家，得分身邊教學一下子有人如今，任何人修改結構差距手機配合中文版過了提到豪。
+            </p>
+            <img src="images/wolf2.avif" width="200px" alt="" class="float-end">
+            <p>臺灣才能問題來到司機天氣，世界盃導演照顧類別事故是我房子，市場價技巧機構會計重要線上委員會負責人，真實性不明白精靈氣息類型北方，喜愛隨後臨床樓上窗口手冊更為因為予以有人，嚴重負責先後安排有什麼諾基亞漢化微軟時期願意加盟對外一家，得分身邊教學一下子有人如今，任何人修改結構差距手機配合中文版過了提到豪。
+            </p>
+        </div>
+
+        <h1>9.img-fluid,img-thumbnail</h1>
+        <div class="box01">
+            <p>width=100% 配合框框 有失真風險:</p>
+            <img src="images/wolf2.avif" width="100%" alt="">
+            <p>class="img-fluid" 配合框框直到圖片極限:</p>
+            <img src="images/wolf2.avif" class="img-fluid" alt="">
+            <p>class="img-thumbnail" 圖片白邊:</p>
+            <img src="images/wolf2.avif" class="img-fluid img-thumbnail" alt="">
+        </div>
+
+        <h1>10.d-block mx-auto</h1>
+        <div class="box01">
+            <p>class="d-block mx-auto"圖片置中</p>
+            <img src="images/wolf2.avif" width="200px" alt="" class="d-block mx-auto">
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
